@@ -9,13 +9,38 @@
     <link rel="icon" href="insta-logo.jpeg">
 </head>
 
+
 <body style="background-color: #fafafa;">
     <div class="body d-flex">
 
         <!-- image--container -->
         <div class="container-1">
             <img src="mobile.png" alt="mobile image" style="margin-top: 0;">
+            <div style="position: relative;bottom: 526px; left: 148px;">
+                <img class="mySlides" src="insta-image-1.jpg" style="height: 435px;">
+                <img class="mySlides" src="insta-image-2.jpeg" style="height: 435px;">
+                <img class="mySlides" src="insta-image-3.jpg" style="height: 435px;">
+            </div>
         </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        </script>
+
 
         <!-- login--container -->
         <div class="container-2">
