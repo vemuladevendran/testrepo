@@ -103,16 +103,13 @@
 }
 
 .or-line {
-    width: 2rem;
-    height: 3rem;
+    width: 3rem;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 50%;
     text-align: center;
-    line-height: 2;
 }
 
 .fb-link {
